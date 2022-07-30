@@ -180,7 +180,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 
 .titleCopy p{color:red;text-transform: uppercase;font-weight:700;margin:0px;}
-.titleCopy h2{color:#000;margin:10px 0px;font-size:36px;max-width:200px;line-height:100%;}
+.titleCopy h2{color:#000;margin:10px 0px;font-size:36px;line-height:100%;}
 .titleCopy a{color: red;
     text-transform: uppercase;
     font-size: 14px;

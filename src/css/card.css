@@ -1,0 +1,27 @@
+.card{background-color:#fff;position:relative;box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    padding:15px;
+    border-radius:10px;
+    text-decoration: none;
+    display:flex;
+    flex-direction:column;
+    flex: 1 1 auto;
+}
+.card:hover{box-shadow: 0 2px 8px rgb(0 0 0 / 30%);}
+.cardAvatar{width:35px;height:35px;border-radius:50%;position:absolute;top:16px}
+.cardAuthor p{color:gray;margin:0px;line-height:110%;font-size:12px;padding-left:45px;}
+.cardAuthor p strong{display:block;}
+.cardImage{height:150px;background-size:cover;background-position: center;margin-top:20px;margin-bottom:10px;border-radius:10px;}
+.cardTitle{color:#000;font-size:14px;line-height:130%;font-weight:500;margin-bottom:0px;
+    -ms-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+
+}
+.cardPrice{color:#000;font-weight:600;margin:10px 0px;}
+.cardPrice span{font-weight:500;color:gray;font-size:12px;text-decoration: line-through;}
+.cardFooterGrid{border-top:1px solid;margin:0px !important;}
+.cardLocation{color:gray;font-size:12px;line-height:100%;margin-top:0px;}
+.cardLocation span{font-weight:600;}
+.cardVote, .cardComments{color:gray;font-size:12px;line-height:100%;padding:8px 0px;display:block;}
+.cardGrid .col-lg-2{padding:10px;}

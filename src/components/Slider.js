@@ -12,7 +12,7 @@ export default class SimpleSlider extends Component {
     render() {
 
         const ArrowRight = ({onClick }) => (
-               <img onClick={onClick} src={arrow} class="arrowWrapRight" alt="Arrow Right Slider" />
+               <img onClick={onClick} src={arrow} className="arrowWrapRight" alt="Arrow Right Slider" />
         );
 
         const settings = {
