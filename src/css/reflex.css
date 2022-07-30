@@ -1593,3 +1593,6 @@
         display: none;
     }
 }
+
+.col-custom20{width:20%;}
+.col-custom80{width:80%;}

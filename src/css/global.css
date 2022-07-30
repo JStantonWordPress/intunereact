@@ -14,8 +14,8 @@ body {
 
 /* Header */
 .navDesktop{background-color:#fff;}
-.mainLogo{max-width:130px;}
-.headerLogin{color:#000;font-weight:700;text-transform: uppercase;font-size:14px;text-decoration: none;margin-left:auto;display:table;}
+.mainLogo{max-width:130px;margin-left:15px;}
+.headerLogin{color:#000;font-weight:700;text-transform: uppercase;font-size:14px;text-decoration: none;margin-left:auto;display:table;margin-right:15px;}
 .headerLogin:hover{color:red;}
 .tablet{background-color:#fff;display:none;}
 .tablet .mainLogo{max-width:80px;}
@@ -110,7 +110,7 @@ body {
 /* Burger */
 .bm-burger-button {
     position: absolute;
-    width: 36px;
+    width: 42px;
     height: 30px;
     right: 20px;
     top: 18px;
@@ -175,6 +175,25 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Styling of overlay */
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.titleCopy p{color:red;text-transform: uppercase;font-weight:700;margin:0px;}
+.titleCopy h2{color:#000;margin:10px 0px;font-size:36px;max-width:200px;line-height:100%;}
+.titleCopy a{color: red;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: #fff;
+    display: table;
+    text-decoration: none;
+    font-weight: 700;
+    max-width: 200px;
+    text-align: center;
+    border: 2px solid red;
+    margin-top:20px;
 }
 
 
