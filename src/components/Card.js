@@ -7,7 +7,7 @@ function Card({ authorImage, authorName, date, dealImage, dealTitle, salePrice, 
     return(
         <a href={link} className="card">
             <div className="cardAuthor">
-                <img src={authorImage} class="cardAvatar" />
+                <img src={authorImage} className="cardAvatar" />
                 <p>found by <strong>{authorName}</strong></p>
                 <p>{date} ago</p>
             </div>

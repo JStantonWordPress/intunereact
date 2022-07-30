@@ -7,23 +7,22 @@ import {useState, useEffect} from 'react';
 
 export default function FrontDeals(){
 
-    const api = 'https://jsonplaceholder.typicode.com/todos/';
+    const api = 'https://community.intunedeals.com/latest.json';
     let displayData
+
 
     function pullJson(){
         fetch(api)
             .then(response => response.json())
             .then(responseData => {
-                displayData = responseData.map(function(todo){
-                    return(
-                        <p></p>
-                    )
+                //console.log(responseData)
                 })
-                console.log("console:", responseData)
-            })
+
     }
 
     useEffect(() => {
+
+        pullJson()
 
     }, [])
 
@@ -44,6 +43,66 @@ export default function FrontDeals(){
                         authorImage={Logo}
                         dealImage={Logo}
                         dealTitle="Long Deal Title Will Go Here"
+                        salePrice="109.99"
+                        origPrice="199.99"
+                        store="ebay.com"
+                        vote="10"
+                        comments="5"
+                        link="https://www.google.com/"
+                    />
+                </div>
+                <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                    <Card
+                        authorName="Joe Stanton Long"
+                        date="1d"
+                        authorImage={Logo}
+                        dealImage={Logo}
+                        dealTitle="Long Deal Title Will Go Here  sdf sdfasdfasdfsa dsf sdfsdf asdf"
+                        salePrice="109.99"
+                        origPrice="199.99"
+                        store="ebay.com"
+                        vote="10"
+                        comments="5"
+                        link="https://www.google.com/"
+                    />
+                </div>
+                <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                    <Card
+                        authorName="Joe Stanton Long"
+                        date="1d"
+                        authorImage={Logo}
+                        dealImage={Logo}
+                        dealTitle="Long Deal Title Will Go Here  sdf sdfasdfasdfsa dsf sdfsdf asdf"
+                        salePrice="109.99"
+                        origPrice="199.99"
+                        store="ebay.com"
+                        vote="10"
+                        comments="5"
+                        link="https://www.google.com/"
+                    />
+                </div>
+                <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                    <Card
+                        authorName="Joe Stanton Long"
+                        date="1d"
+                        authorImage={Logo}
+                        dealImage={Logo}
+                        dealTitle="Long Deal Title Will Go Here  sdf sdfasdfasdfsa dsf sdfsdf asdf"
+                        salePrice="109.99"
+                        origPrice="199.99"
+                        store="ebay.com"
+                        vote="10"
+                        comments="5"
+                        link="https://www.google.com/"
+                    />
+                </div>
+                <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                    <Card
+                        authorName="Joe Stanton Long"
+                        date="1d"
+                        authorImage={Logo}
+                        dealImage={Logo}
+                        dealTitle="Long Deal Title Will Go Here  sdf sdfasdfasdfsa dsf sdfsdf asdf"
                         salePrice="109.99"
                         origPrice="199.99"
                         store="ebay.com"
