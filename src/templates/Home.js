@@ -2,13 +2,15 @@ import React from "react";
 import Hero from "../components/Hero";
 import Slider from "../components/Slider";
 import FrontDeals from "../components/FrontDeals";
+import Newsletter from "../components/Newsletter";
 
 function Home() {
     return (
         <>
-        <Hero />
-        <Slider />
+            <Hero />
             <FrontDeals />
+            <Slider />
+            <Newsletter />
         </>
     );
 }

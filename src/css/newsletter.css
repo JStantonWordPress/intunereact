@@ -1,0 +1,14 @@
+.newsLetter{background-color:#000;display: flex;
+    justify-content: center;
+    flex-direction: column;min-height:300px;}
+.newsLetter h2{color:#fff;text-align: center;margin:0px;font-size:40px;}
+.newsLetter p{color:#fff;text-align: center;line-height:160%;font-weight:500;margin-top:10px;}
+.newsLetterForm{text-align:center;margin-top:20px;}
+.newsLetterForm input{border-radius:25px;padding:13px 20px;border:none;width:700px;}
+.newsLetterForm button{
+    position: absolute;
+    margin-left: -40px;
+    z-index: 10;
+    margin-top: 9px;
+    cursor:pointer;
+}

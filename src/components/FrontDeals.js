@@ -127,6 +127,12 @@ export default function FrontDeals(){
                     />
                 </div>
             </div>
+
+            <div className="grid">
+                <div className="col-sm-12">
+                    <a className="loadMore" href="#">Load More</a>
+                </div>
+            </div>
         </div>
     )
 }
