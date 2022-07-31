@@ -126,6 +126,96 @@ export default function FrontDeals(){
                         link="https://www.google.com/"
                     />
                 </div>
+                <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                    <Card
+                        authorName="Joe Stanton Long"
+                        date="1d"
+                        authorImage={Logo}
+                        dealImage={Logo}
+                        dealTitle="Long Deal Title Will Go Here"
+                        salePrice="109.99"
+                        origPrice="199.99"
+                        store="ebay.com"
+                        vote="10"
+                        comments="5"
+                        link="https://www.google.com/"
+                    />
+                </div>
+                <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                    <Card
+                        authorName="Joe Stanton Long"
+                        date="1d"
+                        authorImage={Logo}
+                        dealImage={Logo}
+                        dealTitle="Long Deal Title Will Go Here  sdf sdfasdfasdfsa dsf sdfsdf asdf"
+                        salePrice="109.99"
+                        origPrice="199.99"
+                        store="ebay.com"
+                        vote="10"
+                        comments="5"
+                        link="https://www.google.com/"
+                    />
+                </div>
+                <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                    <Card
+                        authorName="Joe Stanton Long"
+                        date="1d"
+                        authorImage={Logo}
+                        dealImage={Logo}
+                        dealTitle="Long Deal Title Will Go Here  sdf sdfasdfasdfsa dsf sdfsdf asdf"
+                        salePrice="109.99"
+                        origPrice="199.99"
+                        store="ebay.com"
+                        vote="10"
+                        comments="5"
+                        link="https://www.google.com/"
+                    />
+                </div>
+                <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                    <Card
+                        authorName="Joe Stanton Long"
+                        date="1d"
+                        authorImage={Logo}
+                        dealImage={Logo}
+                        dealTitle="Long Deal Title Will Go Here  sdf sdfasdfasdfsa dsf sdfsdf asdf"
+                        salePrice="109.99"
+                        origPrice="199.99"
+                        store="ebay.com"
+                        vote="10"
+                        comments="5"
+                        link="https://www.google.com/"
+                    />
+                </div>
+                <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                    <Card
+                        authorName="Joe Stanton Long"
+                        date="1d"
+                        authorImage={Logo}
+                        dealImage={Logo}
+                        dealTitle="Long Deal Title Will Go Here  sdf sdfasdfasdfsa dsf sdfsdf asdf"
+                        salePrice="109.99"
+                        origPrice="199.99"
+                        store="ebay.com"
+                        vote="10"
+                        comments="5"
+                        link="https://www.google.com/"
+                    />
+                </div>
+                <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                    <Card
+                        authorName="Joe Stanton Long"
+                        date="1d"
+                        authorImage={Logo}
+                        dealImage={Logo}
+                        dealTitle="Long Deal Title Will Go Here  sdf sdfasdfasdfsa dsf sdfsdf asdf"
+                        salePrice="109.99"
+                        origPrice="199.99"
+                        store="ebay.com"
+                        vote="10"
+                        comments="5"
+                        link="https://www.google.com/"
+                    />
+                </div>
             </div>
 
             <div className="grid">
