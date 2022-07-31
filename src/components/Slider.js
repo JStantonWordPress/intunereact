@@ -21,8 +21,28 @@ export default class SimpleSlider extends Component {
             speed: 500,
             slidesToShow: 4,
             slidesToScroll: 1,
-            nextArrow: <ArrowRight />
-        };
+            nextArrow: <ArrowRight />,
+            responsive: [
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        }
         return (
             <div>
                   <div className="container">

@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/card.css";
-import Logo from "../images/logo.png";
 
 
 function Card({ authorImage, authorName, date, dealImage, dealTitle, salePrice, origPrice, store, vote, comments, link }){

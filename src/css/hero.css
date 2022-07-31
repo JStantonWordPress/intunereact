@@ -2,3 +2,8 @@
 .homeHero h1{margin:0px;color:#fff;font-size:75px;max-width:700px;line-height:90%;}
 .homeHero p{color:#fff;font-size:18px;line-height: 160%;font-weight:500;max-width:700px;}
 .homeHero a{color:red;text-transform: uppercase;font-size:14px;padding:15px 30px;border-radius:25px;background-color:#fff;display:table;text-decoration:none;font-weight:700;max-width:200px;text-align:center;border:2px solid black;}
+
+@media screen and (max-width:767px){
+    .homeHero{min-height: 100%;padding:30px;}
+    .homeHero h1{font-size:36px;}
+}

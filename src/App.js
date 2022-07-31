@@ -6,6 +6,7 @@ import About from "./templates/About";
 import Privacy from "./templates/Privacy";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import Hamburger from "./components/Burger";
 
 import "./css/fonts.css";
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/contact" element={<Contact />}></Route>
                     <Route path="/privacy" element={<Privacy />}></Route>
                 </Routes>
+                <Footer />
             </div>
       </Router>
   );

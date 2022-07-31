@@ -12,3 +12,14 @@
     margin-top: 9px;
     cursor:pointer;
 }
+
+
+@media screen and (max-width:991px){
+    .newsLetterForm input{width:80%;}
+    .newsLetter{padding:30px;}
+    .newsLetter h2{line-height:110%;}
+}
+
+@media screen and (max-width:767px){
+    .newsLetter{min-height:100%;}
+}

@@ -197,6 +197,23 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 
+/* Footer */
+.footerFluid{background-color: #313131;text-align:center;padding-top:40px;padding-bottom:40px;}
+.footerFluid ul{list-style-type: none;padding:0px;}
+.footerFluid ul li{display:inline-block;}
+.footerFluid ul li a{color:#fff;font-weight: 700;text-transform: uppercase;padding:10px;text-decoration: none;}
+.footerLogo{max-width:150px;margin:0px auto;}
+.footerFluidCopy{background-color:#000;}
+.footerFluidCopy p{margin:0px;font-size:14px;color:gray;}
+.footerFluidCopy p a{color:gray;}
+
+@media screen and (max-width:1199px) {
+    .titleCopy h2 {
+        font-size: 32px;
+    }
+    .titleCopy a{padding:10px;}
+}
+
 @media screen and (max-width:991px) {
     .navDesktop {
         display: none;
@@ -205,3 +222,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
     .tablet{display:inherit;}
 }
 
+@media screen and (max-width:767px) {
+    .footerFluid ul li {
+        display: block;
+        margin-bottom:15px;
+    }
+}

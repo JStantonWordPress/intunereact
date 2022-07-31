@@ -1596,3 +1596,14 @@
 
 .col-custom20{width:20%;}
 .col-custom80{width:80%;}
+
+
+@media screen and (max-width:991px){
+    .col-custom20{width:30%;}
+    .col-custom80{width:70%;}
+}
+
+@media screen and (max-width:767px){
+    .col-custom20{width:100%;}
+    .col-custom80{width:100%;}
+}
