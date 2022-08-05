@@ -3,28 +3,13 @@ import "../css/frontdeals.css";
 import Card from "../components/Card";
 import Logo from "../images/logo.png";
 import {useState, useEffect} from 'react';
+import axios from "axios";
+
+
 
 
 export default function FrontDeals(){
 
-    const api = 'https://community.intunedeals.com/latest.json';
-    let displayData
-
-
-    function pullJson(){
-        fetch(api)
-            .then(response => response.json())
-            .then(responseData => {
-                //console.log(responseData)
-                })
-
-    }
-
-    useEffect(() => {
-
-        pullJson()
-
-    }, [])
 
     return(
         <div className="container frontDealsContainer">
@@ -36,6 +21,7 @@ export default function FrontDeals(){
             </div>
 
             <div className="grid cardGrid">
+                {/* Start Looping through topics tagged frontpage here and pass data into component props */}
                 <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
                     <Card
                         authorName="Joe Stanton Long"
@@ -51,6 +37,7 @@ export default function FrontDeals(){
                         link="https://www.google.com/"
                     />
                 </div>
+                {/* End topic loop */}
                 <div className="col-sm-4 col-md-3 col-lg-2 col-grid">
                     <Card
                         authorName="Joe Stanton Long"
@@ -226,3 +213,6 @@ export default function FrontDeals(){
         </div>
     )
 }
+
+
+

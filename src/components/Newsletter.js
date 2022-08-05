@@ -9,7 +9,7 @@ function Newsletter(){
                     <div className="newsLetter">
                         <h2>Subscribe to our Newsletter</h2>
                         <p>Subscribe to our newsletter to get latest deals on all types of musical gear.</p>
-                        <form class="newsLetterForm">
+                        <form className="newsLetterForm">
                             <input type="text" placeholder="Your email address" />
                             <button type="submit">F</button>
                         </form>

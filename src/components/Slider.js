@@ -3,7 +3,17 @@ import Slider from "react-slick";
 import "../css/slider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import catcard from "../images/categories/catCard.png";
+import accessories from "../images/categories/accessories-cat-min.jpg";
+import amps from "../images/categories/amps-cat-min.jpg";
+import basses from "../images/categories/basses-cat-min.jpg";
+import dj from "../images/categories/dj-cat-min.jpg";
+import drums from "../images/categories/drums-cat-min.jpg";
+import guitars from "../images/categories/guitars-cat-min.jpg";
+import keyboard from "../images/categories/keyboard-cat-min.jpg";
+import recording from "../images/categories/recording-cat-min.jpg";
+
+
+
 import arrow from "../images/arrowRight.png";
 
 
@@ -18,7 +28,7 @@ export default class SimpleSlider extends Component {
         const settings = {
             dots: false,
             infinite: true,
-            speed: 500,
+            speed: 300,
             slidesToShow: 4,
             slidesToScroll: 1,
             nextArrow: <ArrowRight />,
@@ -57,22 +67,28 @@ export default class SimpleSlider extends Component {
 
                                <Slider {...settings}>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={catcard} alt="catCard" /></a>
+                                       <a href="#"><img className="flex-img" src={guitars} alt="Guitar Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={catcard} alt="catCard" /></a>
+                                       <a href="#"><img className="flex-img" src={basses} alt="Basses Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={catcard} alt="catCard" /></a>
+                                       <a href="#"><img className="flex-img" src={amps} alt="Amps Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={catcard} alt="catCard" /></a>
+                                       <a href="#"><img className="flex-img" src={recording} alt="Recording Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={catcard} alt="catCard" /></a>
+                                       <a href="#"><img className="flex-img" src={keyboard} alt="Keyboards Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={catcard} alt="catCard" /></a>
+                                       <a href="#"><img className="flex-img" src={accessories} alt="Accessories Category" /></a>
+                                   </div>
+                                   <div>
+                                       <a href="#"><img className="flex-img" src={drums} alt="Drums Category" /></a>
+                                   </div>
+                                   <div>
+                                       <a href="#"><img className="flex-img" src={dj} alt="DJ Category" /></a>
                                    </div>
                                </Slider>
 

@@ -1,5 +1,6 @@
 .slick-slider .slick-slide{padding:15px;}
-.slick-slider .slick-slide img:hover{box-shadow: 0 2px 2px rgb(0 0 0 / 30%);}
+.slick-slide img{border-radius:10px;}
+.slick-slider .slick-slide img:hover{box-shadow: 0 2px 15px rgb(0 0 0 / 10%);}
 .arrowWrapRight{ position: absolute;
     right: -10px;
     top: 100px;
@@ -7,6 +8,7 @@
     box-shadow: 0 2px 8px rgb(0 0 0 / 30%);
     border-radius: 5px;
     cursor: pointer;}
+.arrowWrapRight:hover{ box-shadow: 0 2px 8px rgb(0 0 0 / 50%);}
 
 .slick-prev{display:none !important;}
 

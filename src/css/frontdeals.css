@@ -1,6 +1,6 @@
-.frontDealsContainer{padding-top:50px;padding-bottom:50px;}
+.frontDealsContainer{padding-top:40px;padding-bottom:50px;}
 .frontDealsContainer .titleCopy{text-align:center;}
-.frontDealsContainer .titleCopy h2{margin-bottom:40px;}
+.frontDealsContainer .titleCopy h2{margin-bottom:40px;font-size:46px;}
 .loadMore{
     color: #fff;
     text-transform: uppercase;

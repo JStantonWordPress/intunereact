@@ -9,7 +9,7 @@ function Footer(){
                 <div className="container">
                     <div className="grid">
                         <div className="col-sm-12">
-                            <img src={Logo} class="flex-img footerLogo" alt="InTuneDeals Logo" />
+                            <img src={Logo} className="flex-img footerLogo" alt="InTuneDeals Logo" />
                            <ul>
                                <li><Link to="/">Frontpage Deals</Link></li>
                                <li><a href="#">Community</a></li>
