@@ -1,5 +1,5 @@
 .card{background-color:#fff;position:relative;box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
-    padding:15px;
+    padding:10px;
     border-radius:10px;
     text-decoration: none;
     display:flex;
@@ -16,12 +16,23 @@
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
     overflow: hidden;
-
+}
+.cardImageSingle{
+    width:  100%;
+    height: 175px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 .cardPrice{color:#000;font-weight:600;margin:10px 0px;}
 .cardPrice span{font-weight:500;color:gray;font-size:12px;text-decoration: line-through;}
-.cardFooterGrid{border-top:1px solid;margin:0px !important;}
-.cardLocation{color:gray;font-size:12px;line-height:100%;margin-top:0px;}
+.cardFooterGrid{border-top:1px solid #e7e7e7;margin:0px !important;}
+.cardLocation{color:gray;font-size:12px;line-height:100%;margin:0px;}
 .cardLocation span{font-weight:600;}
-.cardVote, .cardComments{color:gray;font-size:12px;line-height:100%;padding:8px 0px;display:block;}
+.cardVote, .cardComments{color:gray;font-size:12px;line-height:100%;padding:8px 0px;display:inline-block;}
 .cardGrid .col-lg-2{padding:10px;}
+.cardFooterRight{text-align: right;}
+
+@media  screen and (max-width: 767px) {
+    .cardImageSingle{height:200px;}
+}

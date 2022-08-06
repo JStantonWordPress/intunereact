@@ -14,18 +14,18 @@ body {
 
 /* Header */
 .navDesktop{background-color:#fff;}
-.mainLogo{max-width: 190px;
+.mainLogo{max-width: 170px;
     margin-left: 50px;
-    margin-bottom: -50px;margin-top: 15px;z-index: 10;position: relative;}
-.headerLogin{color:#000;font-weight:700;text-transform: uppercase;font-size:14px;text-decoration: none;margin-left:auto;display:table;margin-right:15px;}
+    margin-bottom: -50px;margin-top: 25px;z-index: 10;position: relative;}
+.headerLogin{color:#000;font-weight:700;text-transform: uppercase;font-size:14px;text-decoration: none;margin-left:auto;display:table;margin-right:15px;letter-spacing: 1px;}
 .headerLogin:hover{color:red;}
 .tablet{background-color:#fff;display:none;}
-.tablet .mainLogo{max-width:80px;}
+.tablet .mainLogo{max-width:60px;}
 .tablet .headerLogin{margin-right:75px;}
-
+.headerLoginImage{display: inline-block;vertical-align: bottom;margin-right: 7px;}
 
 /* Navigation */
-.main-navigation{margin-top:0px;text-align:left;padding-left: 0px;}
+.main-navigation{margin-top:0px;text-align:left;padding-left: 0px;padding-left:10px;}
 .main-navigation li {
     display: block;
     position: relative;
@@ -90,7 +90,8 @@ body {
     background-color:#e7e7e7;
 }
 .dropdown-menu li {
-    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid black;
+    margin-top: -1px;
 }
 .new{
     background: red;
@@ -181,7 +182,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 
 
-.titleCopy p{color:red;text-transform: uppercase;font-weight:700;margin:0px;}
+.titleCopy p{color:red;text-transform: uppercase;font-weight:700;margin:0px;letter-spacing: 1px;}
 .titleCopy h2{color:#000;margin:10px 0px;font-size:36px;line-height:100%;}
 .titleCopy a{color: red;
     text-transform: uppercase;
@@ -200,12 +201,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 
 /* Footer */
-.footerFluid{background-color: #313131;text-align:center;padding-top:40px;padding-bottom:40px;}
+.footerFluid{background-color: #171717;text-align:center;padding-top:40px;padding-bottom:40px;}
 .footerFluid ul{list-style-type: none;padding:0px;}
 .footerFluid ul li{display:inline-block;}
 .footerFluid ul li a{color:#fff;font-weight: 700;text-transform: uppercase;padding:10px;text-decoration: none;}
-.footerLogo{max-width:150px;margin:0px auto;}
-.footerFluidCopy{background-color:#000;}
+.footerLogo{max-width:150px;margin:30px auto;}
+.footerFluidCopy{background-color:#000;text-align: center;}
 .footerFluidCopy p{margin:0px;font-size:14px;color:gray;}
 .footerFluidCopy p a{color:gray;}
 
@@ -214,6 +215,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
         font-size: 32px;
     }
     .titleCopy a{padding:10px;}
+    .mainLogo{margin-left:15px;}
 }
 
 @media screen and (max-width:991px) {
@@ -222,6 +224,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     }
     .bm-burger-button{display:inherit;}
     .tablet{display:inherit;}
+    .mainLogo{margin:10px;max-width:50px;}
 }
 
 @media screen and (max-width:767px) {

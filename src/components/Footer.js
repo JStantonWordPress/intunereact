@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import Logo from "../images/logo.png";
+import Logo from "../images/intunedeals-logo-min.png";
 
 function Footer(){
     return(
@@ -22,11 +22,8 @@ function Footer(){
             <div className="footerFluidCopy">
                 <div className="container">
                     <div className="grid">
-                        <div className="col-sm-6">
+                        <div className="col-sm-12">
                             <p>&copy; 2022 Copyright InTuneDeals. <Link to="/privacy">Privacy Policy</Link></p>
-                        </div>
-                        <div className="col-sm-6">
-                            Social Media
                         </div>
                     </div>
                 </div>

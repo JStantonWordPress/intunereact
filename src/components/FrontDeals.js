@@ -2,6 +2,7 @@ import React from "react";
 import "../css/frontdeals.css";
 import Card from "../components/Card";
 import Logo from "../images/logo.png";
+import Logo2 from "../images/hero-back-min.jpg";
 import {useState, useEffect} from 'react';
 import axios from "axios";
 
@@ -58,7 +59,7 @@ export default function FrontDeals(){
                         authorName="Joe Stanton Long"
                         date="1d"
                         authorImage={Logo}
-                        dealImage={Logo}
+                        dealImage={Logo2}
                         dealTitle="Long Deal Title Will Go Here  sdf sdfasdfasdfsa dsf sdfsdf asdf"
                         salePrice="109.99"
                         origPrice="199.99"
@@ -88,7 +89,7 @@ export default function FrontDeals(){
                         authorName="Joe Stanton Long"
                         date="1d"
                         authorImage={Logo}
-                        dealImage={Logo}
+                        dealImage={Logo2}
                         dealTitle="Long Deal Title Will Go Here  sdf sdfasdfasdfsa dsf sdfsdf asdf"
                         salePrice="109.99"
                         origPrice="199.99"
