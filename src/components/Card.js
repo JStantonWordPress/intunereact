@@ -11,8 +11,6 @@ function Card({ authorImage, authorName, date, dealImage, dealTitle, salePrice, 
                 <p>{date} ago</p>
             </div>
 
-            {/*<div className="cardImage" style={{backgroundImage: `url(${dealImage})`}}></div>*/}
-
             <img src={dealImage} class="cardImageSingle" alt="deal image" />
 
             <p className="cardTitle">{dealTitle}</p>
@@ -23,8 +21,8 @@ function Card({ authorImage, authorName, date, dealImage, dealTitle, salePrice, 
                             <p className="cardLocation">at <span>{store}</span></p>
                         </div>
                         <div className="col-6 cardFooterRight">
-                            <span className="cardVote">{vote}</span>
-                            <span className="cardComments">{comments}</span>
+                            <span className="cardVote">Votes: {vote}</span>
+                            <span className="cardComments">Comments: {comments}</span>
                         </div>
                     </div>
             </div>
