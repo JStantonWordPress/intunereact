@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/frontdeals.css";
 import Card from "../components/Card";
-import Logo from "../images/logo.png";
+import Placeholder from "../images/place-holder-image.jpg";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -31,10 +31,9 @@ export default function FrontDeals() {
             console.log({ error });
         }
     };
-    console.log(pageCount)
+
     useEffect(() => {
         pullData();
-        console.log({pageCount})
     }, []);
 
     const loadMore = () => {
@@ -42,6 +41,36 @@ export default function FrontDeals() {
             return prevCount + 1;
         });
     };
+
+    const productList =
+        topics.length > 0 &&
+        topics.map((obj) => {
+            const recivedData = new Date(obj.created_at);
+            const date = `${recivedData.toLocaleString("default", {
+                month: "long",
+            })} ${recivedData.getDate()} `;
+            const imageURL = obj?.image_url;
+            const imagePath = obj.author.avatar_template.replace("{size}", "90");
+            const imageURLback = Placeholder;
+            return (
+                <div key={obj.id} className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                    <Card
+                        authorName={obj.author?.name}
+                        date={date}
+                        authorImage={`https://community.intunedeals.com/${imagePath}`}
+                        dealImage={imageURL ? imageURL : imageURLback}
+                        dealTitle={obj?.title}
+                        salePrice={obj?.Price}
+                        store={obj?.Store}
+                        vote={obj?.like_count}
+                        comments={obj?.posts_count}
+                        link={
+                            "https://community.intunedeals.com/t/" + obj.slug + "/" + obj.id
+                        }
+                    />
+                </div>
+            );
+        });
 
     return (
         <div className="container frontDealsContainer">
@@ -52,36 +81,11 @@ export default function FrontDeals() {
                 </div>
             </div>
 
-            <div className="grid cardGrid">
-                {
-                    console.log(topics)
-                }
-                {topics.length > 0 && topics.map((obj) => {
-                    const date = obj.created_at
-                    const imageURL = obj?.image_url
-                    const imageURLback = "https://intunedeals.com/static/media/hero-back-min.31552017f3819b7770f6.jpg"
-                    return (
-                        <div key={obj.id} className="col-sm-4 col-md-3 col-lg-2 col-grid">
-                            <Card
-                                authorName={obj.author?.name}
-                                date={date}
-                                authorImage ={"https://community.intunedeals.com/user_avatar/community.intunedeals.com/"+obj.author?.username+"/90/3_2.png"}
-                                dealImage={imageURL ? imageURL : imageURLback}
-                                dealTitle={obj?.title}
-                                salePrice={obj?.Price}
-                                store={obj?.Store}
-                                vote={obj?.like_count}
-                                comments={obj?.posts_count}
-                                link={"https://community.intunedeals.com/t/" + obj.slug + "/" + obj.id}
-                            />
-                        </div>
-                    );
-                })}
-            </div>
+            <div className="grid cardGrid">{productList}</div>
 
             <div className="grid">
                 <div className="col-sm-12">
-                    <button className="loadMore" onClick={loadMore} >
+                    <button className="loadMore" onClick={loadMore}>
                         Load More
                     </button>
                 </div>

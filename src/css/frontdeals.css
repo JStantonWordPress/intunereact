@@ -4,15 +4,20 @@
 .loadMore{
     color: #fff;
     text-transform: uppercase;
-    font-size: 14px;
-    padding: 10px 30px;
+    font-size: 16px;
+    padding: 15px 30px;
     border-radius: 25px;
-    background-color: red;
+    background-color: #d40000;
     display: table;
     text-decoration: none;
     font-weight: 700;
-    max-width: 200px;
+    max-width: 230px;
     text-align: center;
-    border: 2px solid red;
+    border: 2px solid #d40000;
     margin:30px auto;
+    cursor: pointer;
+}
+.loadMore:hover{
+    background-color: #fff;
+    color: #d40000;
 }

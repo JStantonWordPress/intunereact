@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import Logo from "../images/intunedeals-logo-min.png";
-import Login from "../images/person-icon-min.png";
+import Logo from "../images/intunedeals-logo-v2.png";
+import Login from "../images/person-icon.png";
 
 function NavBar(){
     return(

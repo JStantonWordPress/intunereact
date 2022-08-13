@@ -14,11 +14,11 @@ body {
 
 /* Header */
 .navDesktop{background-color:#fff;}
-.mainLogo{max-width: 170px;
+.mainLogo{max-width: 185px;
     margin-left: 50px;
-    margin-bottom: -50px;margin-top: 25px;z-index: 10;position: relative;}
+    margin-bottom: -50px;margin-top: 15px;z-index: 10;position: relative;transform: rotate(-6deg);}
 .headerLogin{color:#000;font-weight:700;text-transform: uppercase;font-size:14px;text-decoration: none;margin-left:auto;display:table;margin-right:15px;letter-spacing: 1px;}
-.headerLogin:hover{color:red;}
+.headerLogin:hover{color:#d40000;}
 .tablet{background-color:#fff;display:none;}
 .tablet .mainLogo{max-width:60px;}
 .tablet .headerLogin{margin-right:75px;}
@@ -41,7 +41,7 @@ body {
     text-transform: uppercase;
 }
 .main-navigation li a:hover {
-    color: red;
+    color: #d40000;
 }
 .main-navigation li:hover > ul {
     display: inherit;
@@ -75,7 +75,7 @@ body {
     display:none;
     transform-origin: center top 0;
     transition: all .1s ease 0s;
-    border-top: 5px solid red;
+    border-top: 5px solid #d40000;
     box-shadow: 0px 5px 8px rgba(0,0,0,.3);
     position: absolute;
     min-width: 225px;
@@ -94,7 +94,7 @@ body {
     margin-top: -1px;
 }
 .new{
-    background: red;
+    background: #d40000;
     color: white;
     font-size: 10px;
     border-radius: 7px;
@@ -182,9 +182,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 
 
-.titleCopy p{color:red;text-transform: uppercase;font-weight:700;margin:0px;letter-spacing: 1px;}
+.titleCopy p{color:#d40000;text-transform: uppercase;font-weight:700;margin:0px;letter-spacing: 1px;}
 .titleCopy h2{color:#000;margin:10px 0px;font-size:36px;line-height:100%;}
-.titleCopy a{color: red;
+.titleCopy a{color: #d40000;
     text-transform: uppercase;
     font-size: 14px;
     padding: 10px 30px;
@@ -195,7 +195,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     font-weight: 700;
     max-width: 200px;
     text-align: center;
-    border: 2px solid red;
+    border: 2px solid #d40000;
     margin-top:20px;
 }
 

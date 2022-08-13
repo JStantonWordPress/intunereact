@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import Logo from "../images/intunedeals-logo-min.png";
+import Logo from "../images/footer-logo.png";
 
 function Footer(){
     return(

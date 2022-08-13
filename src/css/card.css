@@ -7,9 +7,9 @@
     flex: 1 1 auto;
 }
 .card:hover{box-shadow: 0 2px 8px rgb(0 0 0 / 30%);}
-.cardAvatar{width:35px;height:35px;border-radius:50%;position:absolute;top:16px}
-.cardAuthor p{color:gray;margin:0px;line-height:110%;font-size:12px;padding-left:45px;}
-.cardAuthor p strong{display:block;}
+.cardAvatar{width:35px;height:35px;border-radius:50%;position:absolute;top:7px}
+.cardAuthor p{color:gray;margin:3px 0px 0px 0px;line-height:110%;font-size:11px;padding-left:45px;}
+/*.cardAuthor p strong{display:block;}*/
 .cardImage{height:150px;background-size:cover;background-position: center;margin-top:20px;margin-bottom:10px;border-radius:10px;}
 .cardTitle{color:#000;font-size:14px;line-height:130%;font-weight:500;margin-bottom:0px;
     -ms-flex: 1 1 auto;
