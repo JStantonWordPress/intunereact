@@ -210,6 +210,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .footerFluidCopy p{margin:0px;font-size:14px;color:gray;}
 .footerFluidCopy p a{color:gray;}
 
+
+.aboutContainer{padding-top:40px;padding-bottom:60px;max-width:800px;}
+.aboutContainer p{line-height: 170%;}
+.aboutContainer ul li{line-height: 170%;}
+.aboutContainer .quote{background: #d40000;color: white;font-weight:600;padding:30px;margin-top: 20px;}
+.aboutContainer h2{margin-top: 30px;}
+
 @media screen and (max-width:1199px) {
     .titleCopy h2 {
         font-size: 32px;
