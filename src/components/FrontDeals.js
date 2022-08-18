@@ -8,6 +8,7 @@ import axios from "axios";
 export default function FrontDeals() {
     const [topics, setTopics] = useState([]);
     const [pageCount, setPageCount] = useState(0);
+    const [isLoadMore,setIsLoadMore] = useState(false);
 
     const pullData = async () => {
         const api = `https://community.intunedeals.com/latest.json?page=${pageCount}`;
@@ -17,8 +18,11 @@ export default function FrontDeals() {
                 url: api,
             };
             let response = await axios(options);
+            response.data.topic_list.topics.length < 30 ? setIsLoadMore(false) : setIsLoadMore(true)
             let { users, topic_list } = response.data;
-            let list = topic_list.topics.map((topic) => {
+            let filteredList = topic_list.topics.filter((topic) => topic.pinned === true)
+            console.log(filteredList)
+            let list = filteredList.map((topic) => {
                 return {
                     ...topic,
                     author: users.filter(
@@ -34,7 +38,7 @@ export default function FrontDeals() {
 
     useEffect(() => {
         pullData();
-    }, []);
+    }, [pageCount]);
 
     const loadMore = () => {
         setPageCount((prevCount) => {
@@ -85,12 +89,13 @@ export default function FrontDeals() {
 
             <div className="grid">
                 <div className="col-sm-12">
-                    <button className="loadMore" onClick={loadMore}>
-                        Load More
-                    </button>
+                    {isLoadMore &&
+                        <button className="loadMore" onClick={loadMore}>
+                            Load More
+                        </button>
+                    }
                 </div>
             </div>
         </div>
     );
 }
-
