@@ -10,9 +10,9 @@ function About() {
                         <p>InTuneDeals was launched in July of 2022. The primary goal of the website is to build a community forum of
                             musicians working together, searching the internet to the find and share incredible cost
                             saving deals on musical instruments and gear. The community is 100% free to sign up and to browse
-                            the forums and frontpage deals. Community members helop share, find, comment, and vote on the best music deals daily. Frontpage Deals are hand selected deals that pull from the forum
-                            based upon number of page views, likes, and replies. To sign up for the forum, you can simply
-                            create an account with your email, or sign in using your google or facebook credentials <a href="https://community.intunedeals.com/signup" target="_blank">here</a>.
+                            the forums and frontpage deals. Community members help share, find, comment, and vote on the best music deals daily. Frontpage Deals are hand selected deals that pull from the forum
+                            based upon number of deal views, votes, and comments. To sign up for the forum, you can simply
+                            create an account with your email, or sign in using your google or facebook credentials by <a href="https://community.intunedeals.com/signup" target="_blank">clicking here</a>.
                             </p>
                         <h2>The Founder</h2>
                         <p>
@@ -30,7 +30,7 @@ function About() {
                         </p>
                         <p>
                             <h2>Get In Touch</h2>
-                            <p>Have questions or want to contribute to the community? Please feel free to contact us at <a href="mailto:intunedeals@gmail.com">intunedeals@gmail.com</a></p>
+                            <p>Have questions or want to contribute to the community? Please feel free to contact us at <a href="mailto:admin@intunedeals.com">admin@intunedeals.com</a></p>
 
                         </p>
                     </div>

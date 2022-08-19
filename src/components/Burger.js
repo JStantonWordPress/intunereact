@@ -10,8 +10,8 @@ class Hamburger extends React.Component {
         return (
             <Menu right pageWrapId={ "pageWrap" } outerContainerId={ "root" }>
                 <Link onClick={() => {document.getElementById("react-burger-cross-btn").click()}} to="/">Frontpage Deals</Link>
-                <a href="#">Community</a>
-                <Link onClick={() => {document.getElementById("react-burger-cross-btn").click()}} to="/about">About</Link>
+                <a href="https://community.intunedeals.com/">Community</a>
+                <Link onClick={() => {document.getElementById("react-burger-cross-btn").click()}} to="/about/">About</Link>
             </Menu>
         );
     }

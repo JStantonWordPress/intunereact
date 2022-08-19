@@ -169,7 +169,7 @@ function Privacy() {
                         <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
                         <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
                         <h2>Contact Us</h2>
-                        <p>If you have any questions about this Privacy Policy, You can contact us: intunedeals@gmail.com</p>
+                        <p>If you have any questions about this Privacy Policy, You can contact us: <a href="mailto:admin@intunedeals.com">admin@intunedeals.com</a></p>
 
 
                     </div>

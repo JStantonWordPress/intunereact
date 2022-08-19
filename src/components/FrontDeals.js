@@ -1,14 +1,16 @@
 import React from "react";
 import "../css/frontdeals.css";
 import Card from "../components/Card";
-import Placeholder from "../images/place-holder-image.jpg";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Placeholder from "../images/place-holder-image.jpg";
 
 export default function FrontDeals() {
     const [topics, setTopics] = useState([]);
     const [pageCount, setPageCount] = useState(0);
-    const [isLoadMore,setIsLoadMore] = useState(false);
+    const [onScreenTopic, setOnScreenTopic] = useState([]);
+    const [num, setNum] = useState(1);
+    const [isMoreContent, setIsMoreContent] = useState(false);
 
     const pullData = async () => {
         const api = `https://community.intunedeals.com/latest.json?page=${pageCount}`;
@@ -18,10 +20,10 @@ export default function FrontDeals() {
                 url: api,
             };
             let response = await axios(options);
-            response.data.topic_list.topics.length < 30 ? setIsLoadMore(false) : setIsLoadMore(true)
             let { users, topic_list } = response.data;
-            let filteredList = topic_list.topics.filter((topic) => topic.pinned === true)
-            console.log(filteredList)
+            let filteredList = topic_list.topics.filter(
+                (topic) => topic.pinned === true
+            );
             let list = filteredList.map((topic) => {
                 return {
                     ...topic,
@@ -35,10 +37,30 @@ export default function FrontDeals() {
             console.log({ error });
         }
     };
+    useEffect(() => {
+        let newArray = [...topics];
+        if (topics.length < 18 * num) {
+            setOnScreenTopic(newArray);
+            setIsMoreContent(false);
+        }
+        else {
+            setOnScreenTopic(newArray.splice(0, 18 * num));
+            setIsMoreContent(true);
+        }
+    }, [topics]);
 
     useEffect(() => {
         pullData();
     }, [pageCount]);
+
+    useEffect(() => {
+        if (topics.length - 18 * num > 18) {
+            let newArray = [...topics];
+            setOnScreenTopic(newArray.splice(0, 18 * num));
+        } else {
+            loadMore();
+        }
+    }, [num]);
 
     const loadMore = () => {
         setPageCount((prevCount) => {
@@ -48,7 +70,7 @@ export default function FrontDeals() {
 
     const productList =
         topics.length > 0 &&
-        topics.map((obj) => {
+        onScreenTopic.map((obj) => {
             const recivedData = new Date(obj.created_at);
             const date = `${recivedData.toLocaleString("default", {
                 month: "long",
@@ -57,7 +79,7 @@ export default function FrontDeals() {
             const imagePath = obj.author.avatar_template.replace("{size}", "90");
             const imageURLback = Placeholder;
             return (
-                <div key={obj.id} className="col-sm-6 col-md-4 col-lg-3 col-xlg-2 col-grid">
+                <div key={obj.id} className="col-sm-4 col-md-3 col-lg-2 col-grid">
                     <Card
                         authorName={obj.author?.name}
                         date={date}
@@ -89,11 +111,11 @@ export default function FrontDeals() {
 
             <div className="grid">
                 <div className="col-sm-12">
-                    {isLoadMore &&
-                        <button className="loadMore" onClick={loadMore}>
+                    {isMoreContent && (
+                        <button className="loadMore" onClick={() => setNum(num + 1)}>
                             Load More
                         </button>
-                    }
+                    )}
                 </div>
             </div>
         </div>
