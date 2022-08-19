@@ -57,7 +57,7 @@ export default function FrontDeals() {
             const imagePath = obj.author.avatar_template.replace("{size}", "90");
             const imageURLback = Placeholder;
             return (
-                <div key={obj.id} className="col-sm-4 col-md-3 col-lg-2 col-grid">
+                <div key={obj.id} className="col-sm-6 col-md-4 col-lg-3 col-xlg-2 col-grid">
                     <Card
                         authorName={obj.author?.name}
                         date={date}

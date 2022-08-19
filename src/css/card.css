@@ -8,7 +8,7 @@
 }
 .card:hover{box-shadow: 0 2px 8px rgb(0 0 0 / 30%);}
 .cardAvatar{width:35px;height:35px;border-radius:50%;position:absolute;top:7px}
-.cardAuthor p{color:gray;margin:3px 0px 0px 0px;line-height:110%;font-size:11px;padding-left:45px;}
+.cardAuthor p{color:#989898;margin:3px 0px 0px 0px;line-height:110%;font-size:11px;padding-left:45px;font-weight: 600;}
 /*.cardAuthor p strong{display:block;}*/
 .cardImage{height:150px;background-size:cover;background-position: center;margin-top:20px;margin-bottom:10px;border-radius:10px;}
 .cardTitle{color:#000;font-size:14px;line-height:130%;font-weight:500;margin-bottom:0px;
@@ -24,14 +24,18 @@
     margin-top: 10px;
     border-radius: 5px;
 }
-.cardPrice{color:#000;font-weight:600;margin:10px 0px;}
-.cardPrice span{font-weight:500;color:gray;font-size:12px;text-decoration: line-through;}
-.cardFooterGrid{border-top:1px solid #e7e7e7;margin:0px !important;}
-.cardLocation{color:gray;font-size:12px;line-height:100%;margin:0px;}
-.cardLocation span{font-weight:600;}
-.cardVote, .cardComments{color:gray;font-size:12px;line-height:100%;padding:8px 0px;display:inline-block;}
+.cardPrice{color:#000;font-weight:600;margin:20px 0px 10px 0px;font-size:18px;}
+.cardPrice span{font-weight:500;color:#CCCCCC;font-size:12px;text-decoration: line-through;}
+.cardFooterGrid{border-top:1px solid #CCCCCC;margin:10px 0px 0px 0px !important;padding-top: 5px !important;}
+.cardLocation{color:#CCCCCC;font-size:12px;line-height:100%;margin:0px;}
+.cardLocation span{font-weight:800;color: #989898;}
+.cardVote, .cardComments{color:#CCCCCC;font-size:12px;font-weight:bold;line-height:100%;padding:8px 0px;display:inline-block;position: relative;width: 30px;padding-right: 0px;}
+.cardComments{margin-left:10px;}
 .cardGrid .col-lg-2{padding:10px;}
 .cardFooterRight{text-align: right;}
+
+.cardIcon1{height: 17px;margin-right: 3px;position: absolute;left:0px;top:4px;}
+.cardIcon2{height: 17px;margin-right: 3px;position: absolute;left:0px;}
 
 @media  screen and (max-width: 767px) {
     .cardImageSingle{height:200px;}
