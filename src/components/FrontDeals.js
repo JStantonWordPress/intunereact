@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Placeholder from "../images/place-holder-image.jpg";
+import Textured from "../images/texturedBG.jpeg";
 
 export default function FrontDeals() {
     const [topics, setTopics] = useState([]);
@@ -116,8 +117,10 @@ export default function FrontDeals() {
                             Load More
                         </button>
                     )}
+                    <img src={Textured} />
                 </div>
             </div>
         </div>
+
     );
 }
