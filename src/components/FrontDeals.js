@@ -117,7 +117,6 @@ export default function FrontDeals() {
                             Load More
                         </button>
                     )}
-                    <img src={Textured} />
                 </div>
             </div>
         </div>
