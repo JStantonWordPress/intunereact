@@ -107,9 +107,7 @@ export default function FrontDeals() {
                     <h2>Frontpage Trending Deals</h2>
                 </div>
             </div>
-
             <div className="grid cardGrid">{productList}</div>
-
             <div className="grid">
                 <div className="col-sm-12">
                     {isMoreContent && (
@@ -120,6 +118,5 @@ export default function FrontDeals() {
                 </div>
             </div>
         </div>
-
     );
 }

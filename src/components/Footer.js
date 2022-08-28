@@ -12,7 +12,7 @@ function Footer(){
                             <img src={Logo} className="flex-img footerLogo" alt="InTuneDeals Logo" />
                            <ul>
                                <li><Link to="/">Frontpage Deals</Link></li>
-                               <li><a href="#">Community</a></li>
+                               <li><a href="https://community.intunedeals.com/">Community</a></li>
                                <li><Link to="/about">About Us</Link></li>
                            </ul>
                         </div>

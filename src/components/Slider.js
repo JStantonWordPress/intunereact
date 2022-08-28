@@ -63,32 +63,30 @@ export default class SimpleSlider extends Component {
                          <a href="#">All Categories</a>
                            </div>
                            <div className="col-custom80">
-
-
                                <Slider {...settings}>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={guitars} alt="Guitar Category" /></a>
+                                       <a href="https://community.intunedeals.com/c/guitars/7"><img className="flex-img" src={guitars} alt="Guitar Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={basses} alt="Basses Category" /></a>
+                                       <a href="https://community.intunedeals.com/c/basses/8"><img className="flex-img" src={basses} alt="Basses Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={amps} alt="Amps Category" /></a>
+                                       <a href="https://community.intunedeals.com/c/amps-effects/9"><img className="flex-img" src={amps} alt="Amps Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={recording} alt="Recording Category" /></a>
+                                       <a href="https://community.intunedeals.com/c/recording/10"><img className="flex-img" src={recording} alt="Recording Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={keyboard} alt="Keyboards Category" /></a>
+                                       <a href="https://community.intunedeals.com/c/keyboards-midi/13"><img className="flex-img" src={keyboard} alt="Keyboards Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={accessories} alt="Accessories Category" /></a>
+                                       <a href="https://community.intunedeals.com/c/accessories/14"><img className="flex-img" src={accessories} alt="Accessories Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={drums} alt="Drums Category" /></a>
+                                       <a href="https://community.intunedeals.com/c/drums/12"><img className="flex-img" src={drums} alt="Drums Category" /></a>
                                    </div>
                                    <div>
-                                       <a href="#"><img className="flex-img" src={dj} alt="DJ Category" /></a>
+                                       <a href="https://community.intunedeals.com/c/dj-lighting/11"><img className="flex-img" src={dj} alt="DJ Category" /></a>
                                    </div>
                                </Slider>
 
