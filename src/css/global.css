@@ -40,6 +40,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.main-navigation .active a{
+    color: #d40000;
+}
 .main-navigation li a:hover {
     color: #d40000;
 }

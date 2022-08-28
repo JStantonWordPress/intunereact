@@ -2,8 +2,20 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import Logo from "../images/intunedeals-logo-v2.png";
 import Login from "../images/person-icon.png";
+import { useLocation } from "react-router-dom";
 
 function NavBar(){
+
+    //assigning location variable
+    const location = useLocation();
+
+    //destructuring pathname from location
+    const { pathname } = location;
+
+    //Javascript split method to get the name of the path in array
+    const splitLocation = pathname.split("/");
+
+
     return(
         <>
             <div className="tablet">
@@ -24,7 +36,7 @@ function NavBar(){
                         </div>
                         <div className="col-sm-7">
                             <ul className="main-navigation">
-                                <li><Link to="/">Frontpage Deals</Link><span className="new">New</span></li>
+                                <li className={splitLocation[1] === "" ? "active" : ""}><Link to="/">Frontpage Deals</Link><span className="new">New</span></li>
                                 <li className="dropdown-item"><a href="https://community.intunedeals.com/">Community</a>
                                     <ul className="dropdown-menu">
                                         <li><a href="https://community.intunedeals.com/c/guitars/7">Guitars</a></li>
@@ -37,7 +49,7 @@ function NavBar(){
                                         <li><a href="https://community.intunedeals.com/c/drums/12">Drums</a></li>
                                     </ul>
                                 </li>
-                                <li><Link to="/about">About Us</Link></li>
+                                <li className={splitLocation[1] === "about" ? "active" : ""}><Link to="/about">About Us</Link></li>
                             </ul>
                         </div>
                         <div className="col-sm-3">
